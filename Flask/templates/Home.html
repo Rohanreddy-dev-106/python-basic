@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stylish Bootstrap Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.9) !important;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .nav-link:hover {
+      color: #f96d00 !important;
+      font-weight: bold;
+    }
+    .hero-image {
+      max-width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      margin-top: 30px;
+      transition: transform 0.3s;
+    }
+    .hero-image:hover {
+      transform: scale(1.05);
+    }
+    .hero-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #333;
+    }
+    .btn-custom {
+      background: #f96d00;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 25px;
+      transition: all 0.3s;
+    }
+    .btn-custom:hover {
+      background: #ff9a56;
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light mx-3 my-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">@Flask</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="text-center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLOiT5omQsR7sqzgEDQmWMw74p_C01wmre6WROKtLcYmwN9k2-PFkUJ-9Hg_2YsMwOcQ&usqp=CAU" class="hero-image" alt="Hero Image">
+    <div class="hero-text">
+      <h1>Welcome to Flask</h1>
+      <p>Making web pages beautiful, one step at a time.</p>
+      <a href="#" class="btn btn-custom">Get Started</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 MyBrand. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

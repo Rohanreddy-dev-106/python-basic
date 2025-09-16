@@ -19,24 +19,34 @@ These can’t be changed in place; any “change” makes a new object."""
 
 # x = 5
 # print(id(x))   # memory id of 5
-# x = x + 1      # creates a NEW int object 6
+# x = x  +1    # creates a NEW int object 6
 # print(id(x))   # different id
 '''Operators'''
 
 """️⃣ Arithmetic"""
 
 #+ - * / % // **
-
+# print(10+1)
+# print(10-2)
+# print(10/2)
+# print(10//2)
+# print(2**2)
 """⃣ Comparison (Relational)"""
-
+# print(10!=10)
+# print(10 <= 8)
+# print(10 >=5)
 
 """"️⃣ Assignment"""
 #= += -= *= /= //= %= **=
+# a=10;
+# a+=10;// a=10+10
+# print(a)
 
 
 """ Logical"""
 
 #and or not
+# print(True or False)
 
 
 """ Membership"""
@@ -50,6 +60,7 @@ These can’t be changed in place; any “change” makes a new object."""
 
 #is is not
 
+
 '''Type Casting'''
 
 
@@ -58,14 +69,23 @@ Two kinds: implicit (done automatically) and explicit (you do it).
     """
 
 #1. Implicit Casting
-
+num1=10
+num2=5.3
+num3=num1+num2
+print(num3)
 
 
 #Explicit Casting
+# n="10"
+# b=int(n)
+# print(type(b))
 
 
 '''user input'''
-
+# A=int(input("Enter Number A"))
+# B=int(input("Enter Number B"))
+# C=A+B;
+# print(C)
 """You can take user input in Python using the built-in input() function"""
 
 '''Strings'''
@@ -78,29 +98,32 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 # print(text[1:4])
 
 
+
 # Common Methods
-# msg = "  Hello World  "
-# print(msg.lower())
-# print(msg.upper())
-# print(msg.strip())
-# print(msg.replace("World","Python"))
-# print(msg.split())
+msg = "  Hello World  "
+print(msg.lower())
+print(msg.upper())
+print(msg.strip())
+print(msg.replace("World","Python"))
+print(msg.split())
 
 
 # Concatenation & Repetition
 # a = "Hi"
-# b = "There"
-# print(a + " " + b) 
-# print(a * 3)
+# # b = "There"
+# # print(a + " " + b) 
+# # print(a * 3)
 
 
-''''LIST'''
+# ''''LIST'''
 # nums = [10, 20, 30, 40, 50];
+# # data=[20,2.3,"rohan",True]
+# # print(data)
 # print(nums[0])
 # print(nums[-2])
 # print(nums[1:4]) 
 
-# Original list
+# # Original list
 # nums = [5, 2, 7]
 # print("Original:", nums)
 
@@ -147,7 +170,8 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 # #copy() - shallow copy
 # copy_list = nums.copy()
 # print("copy():", copy_list)
-'''Tuple'''
+
+# '''Tuple'''
 # t1 = (1, 2, 3)
 # t2 = ("a", "b", "c")
 # t3 = (1, "a", 3.5)
@@ -158,33 +182,34 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 # print(nums[1:4])
 
 
-''''Dictionary (dict)'''
+# ''''Dictionary (dict)'''
 
-"""A dictionary is an unordered collection of key-value pairs. Keys are unique, values can be anything."""
+# """A dictionary is an unordered collection of key-value pairs. Keys are unique, values can be anything."""
 
-# Empty dictionary
-# d1 = {}
+# # Empty dictionary
+# # d1 = {}
 
 # # With key-value pairs
 # d2 = {"a": 1, "b": 2, "c": 3}
 
 # print(d2["a"])       
 # print(d2.get("b"))  
+# print(d2)
 
 
-# d2["d"] = 4          # add new key-value
-# d2["a"] = 10         # update existing
+# # d2["d"] = 4          # add new key-value
+# # d2["a"] = 10         # update existing
 
 
-# print(d2.keys()) 
+# # print(d2.keys()) 
 
-# print(d2.items()) 
+# # print(d2.items()) 
 
 
 
-'''Set'''
+# '''Set'''
 
-"""A set is an unordered collection of unique elements. no duplicates"""
+# """A set is an unordered collection of unique elements. no duplicates"""
 
 # s1 = {1, 2, 3, 4}
 # s2 = set([1, 2, 2, 3])  # duplicates removed → {1,2,3}
@@ -193,7 +218,7 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 # s1.add(5)       # {1,2,3,4,5}
 # s1.remove(2)    # {1,3,4,5}, error if 2 not present
 # s1.pop()        # removes random element
-# # s1.clear()      # removes all
+# s1.clear()      # removes all
 
 # print(s1)
 
@@ -205,28 +230,28 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 #if statement
 
 
-# x = 10
-# if (x > 5):
-#     print("x is greater than 5")
+x = 10
+if (x > 5):
+    print("x is greater than 5")
 
 # #if-else statement
 
 
-# x = 3
-# if (x > 5):
-#     print("x > 5")
-# else:
-#     print("x <= 5")
+x = 3
+if (x > 5):
+    print("x > 5")
+else:
+    print("x <= 5")
 
 # #if-elif-else statement
 
-# x = 7
-# if (x > 10):
-#     print("x > 10")
-# elif( x > 5):
-#     print("x is between 6 and 10")
-# else:
-#     print("x <= 5")
+x = 7
+if (x > 10):
+    print("x > 10")
+elif( x > 5):
+    print("x is between 6 and 10")
+else:
+    print("x <= 5")
 
 
 
@@ -243,7 +268,7 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 
 # Print numbers 1 to 5
 # i = 1
-# while i <= 5:
+# while (i < 5):
 #     print(i)
 #     i += 1
 
@@ -269,32 +294,32 @@ Two kinds: implicit (done automatically) and explicit (you do it).
 
 #Defining a Function
 
-# def greet():
-#     print("Hello, World!")
+def greet():
+    print("Hello, World!")
 
-# greet()  # Call the function
+greet()  # Call the function
 
 
 # #Function with Parameters
 
-# def greet_user(name):
-#     print(f"Hello, {name}!")
+def greet_user(name):
+    print(f"Hello, {name}!")
 
-# greet_user("Alice")
+greet_user("Alice")
 
 
 # #Function with Return Value
 
-# def add(a, b):
-#     return a + b
+def add(a, b):
+    return a + b
 
-# result = add(5, 3)
-# print(result)  # 8
+result = add(5, 3)
+print(result)  # 8
 
 # #Default Parameters
 
-# def greet(name="Guest"):
-#     print(f"Hello, {name}!")
+def greet(name="Guest"):
+    print(f"Hello, {name}!")
 
-# greet()         # Hello, Guest!
-# greet("Alice")  # Hello, Alice!
+greet()         # Hello, Guest!
+greet("Alice")  # Hello, Alice!
