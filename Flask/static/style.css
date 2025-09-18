@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;      /* Scale image to cover the whole screen */
+    background-color: #050505;   /* Fallback color if the image fails to load */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+h1 {
+    color: #ffffff;             
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
+}
+
+
+p {
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+img {
+    display: block;            
+    width: 250px;                
+    border: 4px solid rgba(255,255,255,0.7); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); 
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);      
